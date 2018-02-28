@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: seneca.engine.StructureGeneratorServer
+Class-Path: jar/compchem.jar jar/jnt.jar jar/log4j.jar jar/log4j-core.jar
+Created-By: 1.3.0 (Sun Microsystems Inc.)

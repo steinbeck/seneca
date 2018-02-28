@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: seneca.client.Seneca
+Class-Path: jar/aelfred.jar jar/cml.jar jar/compchem.jar jar/jaxp.jar jar/jfreechart.jar jar/jmdraw.jar jar/junit.jar jar/log4j.jar jar/log4j-core.jar jar/parser.jar jar/sax.jar jar/vecmath1.1-1.12.jar
+Created-By: 1.3.0 (Sun Microsystems Inc.)

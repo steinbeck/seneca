@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-io/1.4.10-RSG/cdk-io-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/graphlayout/graphlayout/1.2.1/graphlayout-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/log4j/log4j/1.2.16/log4j-1.2.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-atomtype/1.4.10-RSG/cdk-atomtype-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-extra/1.4.10-RSG/cdk-extra-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-valencycheck/1.4.10-RSG/cdk-valencycheck-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-ioformats/1.4.10-RSG/cdk-ioformats-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-renderawt/1.4.10-RSG/cdk-renderawt-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/npLikeness/nplikenessScorer/1.4/nplikenessScorer-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-structgen/1.4.10-RSG/cdk-structgen-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-data/1.4.10-RSG/cdk-data-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-sdg/1.4.10-RSG/cdk-sdg-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-extra/1.4.10-RSG/cdk-extra-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-renderawt/1.4.10-RSG/cdk-renderawt-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-interfaces/1.4.10-RSG/cdk-interfaces-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-silent/1.4.10-RSG/cdk-silent-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-annotation/1.4.10-RSG/cdk-annotation-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/graphlayout/graphlayout/1.2.1/graphlayout-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/com/apple/AppleJavaExtensions/1.4/AppleJavaExtensions-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-render/1.4.10-RSG/cdk-render-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-interfaces/1.4.10-RSG/cdk-interfaces-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/java3d/vecmath/1.3.1/vecmath-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-smiles/1.4.10-RSG/cdk-smiles-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/jfree/jcommon/1.0.16/jcommon-1.0.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-log4j/1.4.10-RSG/cdk-log4j-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-data/1.4.10-RSG/cdk-data-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/java3d/vecmath/1.3.1/vecmath-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/xom/xom/1.2.5/xom-1.2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-ioformats/1.4.10-RSG/cdk-ioformats-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-sdg/1.4.10-RSG/cdk-sdg-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-core/1.4.10-RSG/cdk-core-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-formula/1.4.10-RSG/cdk-formula-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/com/apple/AppleJavaExtensions/1.4/AppleJavaExtensions-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-smiles/1.4.10-RSG/cdk-smiles-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-standard/1.4.10-RSG/cdk-standard-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/jfree/jfreechart/1.0.13/jfreechart-1.0.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-renderbasic/1.4.10-RSG/cdk-renderbasic-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/log4j/log4j/1.2.16/log4j-1.2.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-valencycheck/1.4.10-RSG/cdk-valencycheck-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-renderbasic/1.4.10-RSG/cdk-renderbasic-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-log4j/1.4.10-RSG/cdk-log4j-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-atomtype/1.4.10-RSG/cdk-atomtype-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-annotation/1.4.10-RSG/cdk-annotation-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-core/1.4.10-RSG/cdk-core-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-io/1.4.10-RSG/cdk-io-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-render/1.4.10-RSG/cdk-render-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/jfree/jcommon/1.0.16/jcommon-1.0.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/jfree/jfreechart/1.0.13/jfreechart-1.0.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-silent/1.4.10-RSG/cdk-silent-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-standard/1.4.10-RSG/cdk-standard-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../~/Applications/Seneca/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-structgen/1.4.10-RSG/cdk-structgen-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/org/openscience/cdk/cdk-formula/1.4.10-RSG/cdk-formula-1.4.10-RSG.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../target/seneca-1.0/Seneca 1.0.app/Contents/Resources/Java/repo/xom/xom/1.2.5/xom-1.2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

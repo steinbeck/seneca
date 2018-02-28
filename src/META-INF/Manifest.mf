@@ -1,0 +1,4 @@
+Manifest-Version: 2.0
+Main-Class: seneca.gui.SenecaMain
+Class-Path: jar/compchem.jar jar/jmdraw.jar jar/aelfred.jar jar/sax.jar jar/cml.jar jar/vecmath1.1-1.12.jar jar/jaxp.jar jar/parser.jar
+Created-By: 1.3.0 (Sun Microsystems Inc.)

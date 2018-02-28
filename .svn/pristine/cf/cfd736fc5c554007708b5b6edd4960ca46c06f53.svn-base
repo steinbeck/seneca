@@ -1,0 +1,132 @@
+<!DOCTYPE website SYSTEM "/documents/config/xml/website/website.dtd" [
+<!ENTITY about SYSTEM "about.xml">
+<!ENTITY news SYSTEM "news.xml">
+<!ENTITY introduction SYSTEM "introduction.xml">
+<!ENTITY screenshots SYSTEM "screenshots.xml">
+<!ENTITY projectref SYSTEM "projectref.xml">
+<!ENTITY changelog SYSTEM "changelog.xml">
+<!ENTITY agenda SYSTEM "agenda.xml">
+<!ENTITY bibliography SYSTEM "bibliography.xml">
+]>
+<website>
+<homepage>
+<config param="desc" value="The SENECA Homepage"/>
+<config param="filename" value="index.html"/>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="footer" value="about.html" altval="About..."/>
+<config param="homebanner" value="images/seneca_g.gif"
+                           altval="Home Banner"/>
+<config param="banner"     value="images/seneca_g.gif"
+                           altval="Banner"/>
+
+			   
+<head>
+<title>The SENECA Homepage</title>
+<summary>These pages are dedicated to the development and documentation of SENECA, 
+a program package for Computer Assisted Structure Elucidation (CASE)</summary>
+<keywords>SENECA, Computer Assisted Structure Elucidation, CASE, open-source, OpenScience, 
+molecules, chemical structures</keywords>
+<copyright><year>1999</year><year>2000</year>
+<holder role="http://seneca.sourceforge.net/">Christoph Steinbeck</holder></copyright>
+<style src="example.css" class="global"></style>
+</head>
+	 &news;
+	 <section>
+		<title>Quickstart</title>
+		<para>
+		  <ulink
+			url="http://sourceforge.net/projects/seneca"><emphasis>Shortcut to the
+			 SENECA's SourceForge project page with download
+			 option</emphasis></ulink></para>
+	 </section>
+	 <section>
+		<title>Related Projects</title>
+		<para>
+		  <ulink
+			url="http://jchempaint.sourceforge.net"><emphasis>JChemPaint</emphasis></ulink>
+			is an open-source editor for 2D chemical structures and will serve as a
+			goodlist/badlist editor for SENECA.
+		</para>
+
+		<para>
+		  <ulink
+			url="http://cdk.sourceforge.net"><emphasis>The CDK libraries</emphasis></ulink>
+		are SENECA's underlying computational chemistry and chemoinformatics libraries. The CDK is an ongoing 
+		rewrite of the CompChem libraries (http://compchem.sourceforge.net) with better object orientation and better overall design
+		</para>
+		<para>
+		  <ulink
+		  url="http://www.openscience.org/jmol"><emphasis>JMol</emphasis></ulink>
+		  is a Free, Open Source molecule viewer and editor. It is a collaboratively developed visualization and measurement tool for chemical scientists
+		</para>
+
+	 </section>
+	 <webpage id="about">
+		<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+		<config param="filename" value="about.html"/><head>
+		<title>About the SENECA Homepages</title>
+		<summary>About the SENECA Homepages</summary>
+		</head>
+	 	&about;
+	 </webpage>
+</homepage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="SENECA_Intro.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head>
+<title>Introduction</title>
+</head>
+&introduction;
+</webpage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="SENECA_screenshots.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head>
+<title>Screenshots</title>
+</head>
+&screenshots;
+</webpage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="SENECA_Ref.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head><title>Project Reference</title></head>
+&projectref;
+</webpage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="changelog.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head><title>Changelog</title></head>
+&changelog;
+</webpage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="agenda.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head><title>Agenda</title></head>
+&agenda;
+</webpage>
+
+<webpage>
+<config param="rcsdate" value="$Date: 2003/07/14 13:03:13 $"/>
+<config param="filename" value="SENECA_Bib.html"/>
+<config param="homebanner" value="images/seneca_b.gif"/>
+<head><title>Bibliography</title></head>
+&bibliography;
+</webpage>
+
+</website>
+
+<!--
+Local variables:
+mode: docbook
+End:
+-->
