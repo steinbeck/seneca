@@ -1,4 +1,0 @@
-set SENECA_HOME=z:\develop\seneca-cdk
-REM set SENECA_HOME=c:\home\develop\seneca
-move %SENECA_HOME%\doc\htdocs\index.html %SENECA_HOME%\doc\htdocs\index_template.html
-z:\bin\pscp -r %SENECA_HOME%\doc\htdocs\* steinbeck@seneca.sourceforge.net:/home/groups/s/se/seneca/htdocs
