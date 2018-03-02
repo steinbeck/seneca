@@ -24,8 +24,8 @@ import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.silent.AtomContainer;
 import seneca.core.FixedSizeStack;
 import seneca.judges.ScoreSummary;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,10 +43,10 @@ public class StructureGeneratorResult implements java.io.Serializable,
     int size = 30;
     public FixedSizeStack structures = new FixedSizeStack(30);
     public FixedSizeStack scoreSummaries = new FixedSizeStack(30);
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
 
     public StructureGeneratorResult() {
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+    		hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     public StructureGeneratorResult(int size) {
@@ -54,7 +54,7 @@ public class StructureGeneratorResult implements java.io.Serializable,
             this.size = size;
             structures = new FixedSizeStack(this.size);
             scoreSummaries = new FixedSizeStack(this.size);
-            hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+            hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
         }
     }
 

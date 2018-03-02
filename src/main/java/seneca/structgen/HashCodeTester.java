@@ -6,8 +6,8 @@ package seneca.structgen;
 
 import org.openscience.cdk.interfaces.IAtomContainer;
 import seneca.core.StructureIO;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,10 +17,10 @@ import java.util.logging.Logger;
  */
 public class HashCodeTester {
 
-    HashGenerator<Long> hashGenerator = null;
+    MoleculeHashGenerator hashGenerator = null;
 
     public HashCodeTester() {
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+    		hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     public void createHashCode(IAtomContainer molecule) {

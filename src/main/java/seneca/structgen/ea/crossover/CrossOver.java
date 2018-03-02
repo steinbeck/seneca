@@ -17,8 +17,8 @@ import org.openscience.cdk.tools.SaturationChecker;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
 import seneca.structgen.ea.Individual;
 import seneca.structgen.ea.Population;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,20 +46,18 @@ public class CrossOver {
     private static final String BOND_ORDER_SUM = "BondOrderSum";
     private int generationNumber = 0;
     private int iterationCOunt = 0;
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private boolean stopCrossOver = false;
 
     public CrossOver() {
         structureMerger = new StructureMerger();
         //    colorer = new CrossOverColorer();
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+        hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     public CrossOver(boolean stopEvolving) {
+    		this();
         this.stopCrossOver = stopEvolving;
-        structureMerger = new StructureMerger();
-        //    colorer = new CrossOverColorer();
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
     }
 
     public double getCutRatio() {

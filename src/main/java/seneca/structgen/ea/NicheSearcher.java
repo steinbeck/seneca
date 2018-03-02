@@ -8,8 +8,8 @@ import org.openscience.cdk.interfaces.IAtomContainer;
 import seneca.core.Utilities;
 import seneca.judges.ChiefJustice;
 import seneca.judges.ScoreSummary;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.*;
 import java.util.concurrent.ExecutionException;
@@ -36,14 +36,14 @@ public class NicheSearcher {
     private PopulationSorter populationSorter = null;
     private ChiefJustice chiefjustice = null;
     private OffSpringProducer offspringProducer = null;
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
 
     public NicheSearcher() {
 
         random = new Random();
         populationSorter = new PopulationSorter();
         offspringProducer = new OffSpringProducer();
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+        hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
 
     }
 

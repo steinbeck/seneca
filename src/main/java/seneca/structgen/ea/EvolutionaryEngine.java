@@ -15,8 +15,8 @@ import seneca.judges.ScoreSummary;
 import seneca.structgen.StructureGeneratorResult;
 import seneca.structgen.annealinglog.CommonAnnealingLog;
 import seneca.structgen.ea.crossover.CrossOver;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -67,7 +67,7 @@ public class EvolutionaryEngine implements EvolvingEngine {
     private Logger evolutionLogger = null;
     private Logger logger = Logger.getLogger(EvolutionaryEngine.class);
     private DecimalFormat formatter = new DecimalFormat("#.####");
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private CrossOver crossOver = null;
     //  FileWriter redundancyWriter = null;
 
@@ -85,7 +85,7 @@ public class EvolutionaryEngine implements EvolvingEngine {
         nicheSearcher = new NicheSearcher();
         concentricNicheExpander = new ConcentricNicheExpander();
         //tableFrame = new PopulationTableFrame();
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+        hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
         crossOver = new CrossOver(stopEvolving);
         aggregate = new Population<Individual>();
     }
@@ -120,7 +120,7 @@ public class EvolutionaryEngine implements EvolvingEngine {
         do {
             //System.out.println("/////////////////////////////////");
             generations++;
-            System.out.println(generations + "---------------");
+            //System.out.println(generations + "---------------");
             Population parentsAndOffSprings = offSpringProducer.produceExactOffspringsFrom(evaluatedPopulation);
             setGenerationNumber(parentsAndOffSprings);
             evaluatedPopulation = evaluate(parentsAndOffSprings);

@@ -18,8 +18,8 @@ import org.openscience.cdk.silent.AtomContainer;
 import org.openscience.cdk.structgen.RandomGenerator;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
 import seneca.gui.StructureImageGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -39,7 +39,7 @@ import java.util.logging.Logger;
  */
 public final class Utilities {
 
-    static final HashGenerator hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+    static final MoleculeHashGenerator hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     private static final RandomGenerator randomGenerator = new RandomGenerator(null);
     static final ElectronDonation model = ElectronDonation.cdk();
     static final CycleFinder cycles = Cycles.cdkAromaticSet();

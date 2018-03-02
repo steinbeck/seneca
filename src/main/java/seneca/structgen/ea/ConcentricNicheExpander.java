@@ -3,8 +3,8 @@ package seneca.structgen.ea;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import seneca.core.StructureIO;
 import seneca.core.Utilities;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.*;
 
@@ -20,11 +20,11 @@ import java.util.*;
  */
 public class ConcentricNicheExpander {
 
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private Random random = null;
 
     public ConcentricNicheExpander() {
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+    		hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
         random = new Random();
     }
 

@@ -15,8 +15,8 @@ import seneca.structgen.StructureGenerator;
 import seneca.structgen.StructureGeneratorResult;
 import seneca.structgen.StructureGeneratorStatus;
 import seneca.structgen.annealinglog.CommonAnnealingLog;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -40,7 +40,7 @@ public class EAStochasticGenerator extends StructureGenerator {
     SaturationChecker satCheck = null;
     private IAtomContainer startMolecule = null;
     private boolean updatedWithZero = false;
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private int initialPopulationSize = 16;
     private RandomGenerator randomGenerator = new RandomGenerator(null);
 
@@ -51,7 +51,7 @@ public class EAStochasticGenerator extends StructureGenerator {
         imageGenerator = new StructureImageGenerator();
         satCheck = new SaturationChecker();
         //  randomGenerator = new RandomGenerator(startMolecule);
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+        hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     

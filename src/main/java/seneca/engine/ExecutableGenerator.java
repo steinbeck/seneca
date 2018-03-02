@@ -16,8 +16,8 @@ import seneca.judges.*;
 import seneca.structgen.StructureGenerator;
 import seneca.structgen.StructureGeneratorResult;
 import seneca.structgen.ea.EAStochasticGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.io.*;
 import java.util.*;
@@ -48,7 +48,7 @@ public class ExecutableGenerator {
     private IAtomContainer expectedMolecule = null;
     private TanimotoCalculator tanimotoCalculator = null;
     private Map<String, List<String>> results_map = null;
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private float tanimotoSum = 0f;
     private List<Integer> ranks = null;
     private int exactMatch = 0;
@@ -62,7 +62,7 @@ public class ExecutableGenerator {
         this.judges = new ArrayList<Judge>();
         this.results_map = new HashMap<String, List<String>>();
         this.ranks = new ArrayList<Integer>();
-        this.hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+        hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     public void initiateStructureGeneration() {

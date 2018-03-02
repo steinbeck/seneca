@@ -7,8 +7,8 @@ package seneca.structgen.ea;
 import org.apache.log4j.Logger;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.structgen.RandomGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGenerator;
-import uk.ac.ebi.mdk.prototype.hash.HashGeneratorMaker;
+import org.openscience.cdk.hash.MoleculeHashGenerator;
+import org.openscience.cdk.hash.HashGeneratorMaker;
 
 import java.util.Map;
 
@@ -18,13 +18,13 @@ import java.util.Map;
 public class OffSpringProducer {
 
     //  private RandomGenerator randomGenerator = null;
-    private HashGenerator<Long> hashGenerator = null;
+    private MoleculeHashGenerator hashGenerator = null;
     private static final Logger logger = Logger.getLogger(OffSpringProducer.class);
     private RandomGenerator randomGenerator = new RandomGenerator(null);
 
     public OffSpringProducer() {
         //   randomGenerator = new RandomGenerator(null);
-        hashGenerator = new HashGeneratorMaker().withDepth(8).withBondOrderSum().nullable().build();
+    		hashGenerator = new HashGeneratorMaker().depth(16).elemental().molecular();
     }
 
     public Population produceExactOffspringsFrom(Population<Individual> selectedParents) {
