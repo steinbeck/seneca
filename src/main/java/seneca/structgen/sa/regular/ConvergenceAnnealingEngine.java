@@ -68,7 +68,7 @@ public class ConvergenceAnnealingEngine implements AnnealingEngine,
     /**
      * Value for the convergenceCounter to be reached as a stop criterion
      */
-    long convergenceStopCount = 4500;
+    long convergenceStopCount = 40000;
     /**
      * The starting temperature (multiplied with k for convenience)
      */
@@ -287,8 +287,16 @@ public class ConvergenceAnnealingEngine implements AnnealingEngine,
         setCurrent_kT(start_kT);
         log("Starting temperature set to : " + start_kT);
         log("ConvergenceStopCount is : " + convergenceStopCount);
+        log("maxUphillSteps: "+ maxUphillSteps);
+        log("maxPlateauSteps: "+ maxPlateauSteps);
+        log("convergenceStopCount: "+ convergenceStopCount);
+     
     }
 
     private void log(String s) {
+    		System.out.println(s);
     }
+    
+    
+    
 }

@@ -94,10 +94,12 @@ public class AdaptiveAnnealingEngine implements AnnealingEngineI {
             fireTemperatureEvent(t);
             if (stopRunning || maxFitnessReached) {
                 isFinished = true;
+                System.out.println("Finished: stopRunning:" + stopRunning + "; maxFitnessReached" + maxFitnessReached);
                 break;
             }
             if (iteration == evalSMax) {
                 isFinished = true;
+                System.out.println("Finished: iteration " + iteration + " equals evalSMax " + evalSMax);
             }
             updateLog();
         }
@@ -146,7 +148,7 @@ public class AdaptiveAnnealingEngine implements AnnealingEngineI {
             }
             annealingLog.addEntry((double) iteration, (double) currentTemperature, lastRecordedBestScore);
             logger.info(iteration + ";" + formatter.format(currentTemperature) + ";" + formatter.format(lastRecordedBestScore) + annealerAdapter.getBestScoreSummary().allJudgeScores);
-            // System.out.println("UPDATE LOG: " + iteration + " - " + currentTemperature + " - " + annealerAdapter.getBestAnnealScore());
+            System.out.println("UPDATE LOG: " + iteration + " - " + currentTemperature + " - " + annealerAdapter.getBestAnnealScore());
         }
     }
 
