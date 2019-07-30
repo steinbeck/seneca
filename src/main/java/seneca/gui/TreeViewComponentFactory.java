@@ -158,12 +158,6 @@ public class TreeViewComponentFactory {
         judgeComponentsMap.put("NMRShiftDbJudge", nmrShiftDBShiftsJudgePanel);
         judges.add(childrenOfJudges);
 
-        childrenOfJudges = new DefaultMutableTreeNode("NPLikenessJudge");
-        JPanel NPLikenessJudgePanel = new NPLikenessJudgeConfigurator(sd);
-        allPanels.add("NPLikenessJudge", NPLikenessJudgePanel);
-        judgeComponentsMap.put("NPLikenessJudge", NPLikenessJudgePanel);
-        judges.add(childrenOfJudges);
-
         childrenOfJudges = new DefaultMutableTreeNode("AntiBredtJudge");
         JPanel antiBredtJudgePanel = new AntiBredtJudgeConfigurator(sd);
         allPanels.add("AntiBredtJudge", antiBredtJudgePanel);

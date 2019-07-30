@@ -112,16 +112,7 @@ public class ExecutableGenerator {
                 configureHOSEbased(judge1);
                 judge.setEnabled(true);
             }
-            if (judge instanceof NPLikenessJudge) {
-                if (!senecaDataset.getAtomContainer().contains(new Atom("H"))) {
-                    judge.setAtomCount(senecaDataset.getAtomContainer().getAtomCount());
-                } else {
-                    IAtomContainer molWithoutHydrogens = AtomContainerManipulator.removeHydrogens(senecaDataset.getAtomContainer());
-                    judge.setAtomCount(molWithoutHydrogens.getAtomCount());
-                }
-                judge.setEnabled(true);
-            }
-
+ 
             if (judge instanceof AntiBredtJudge) {
                 judge.setAtomCount(senecaDataset.getAtomContainer().getAtomCount());
                 judge.setEnabled(true);

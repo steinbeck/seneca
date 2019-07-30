@@ -36,4 +36,8 @@ public class SENECATests {
         TestSuite suite = new TestSuite();
         return suite;
     }
+    
+    public void testCoverageC10H16() {
+    	
+    }
 }
