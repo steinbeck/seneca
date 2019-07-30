@@ -5,6 +5,28 @@ Seneca is a software for computer-assisted structure elucidation based on a stoc
 The software is licensed under GPL 2.0.
 This github repository hosts the latest version of Seneca based on the latest version of the Chemistry Development Kit (CDK).
 
+## Installation
+In preparation for using Seneca, goto https://github.com/steinbeck/casekit and follow the instructions to download. 
+Once done, also do a 
+```
+mvn install
+```
+
+To install Seneca, get the latest version from this Git repository by using the green "Clone or download" button or do
+
+```
+git clone https://github.com/steinbeck/seneca.git
+```
+on your command line.
+```
+mvn package
+```
+should get you an executable jar file which you can then run by 
+```
+java -jar seneca.jar
+```
+
+
 ## Contributors
 
 Seneca was conceived by Christoph Steinbeck. He also wrote the first version documented in [1]. Yongquan Han wrote the evolutionary algorithm engine documented in [2]. Kalai Jayaseelan migrated Senenca to a modern day version of the CDK, implemented the adaptive simulated annealing engine and renovated the evolutionary engine. Seneca was hosted on Sourceforge until March 2018. In order to avoid confusion, we removed the sourceforge repository. A copy of the SF subversion repository is available on request.  
