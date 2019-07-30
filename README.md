@@ -21,9 +21,9 @@ on your command line.
 ```
 mvn package
 ```
-should get you an executable jar file which you can then run by 
+should get you an executable jar file in the 'target' directory, which you can then run by 
 ```
-java -jar seneca.jar
+java -jar seneca.jar (use the real filename with all dependencies included)
 ```
 ## Using Seneca
 Seneca in its current state is, and for the last 20 years was, what Barend Mons calls 'professorware' :)
