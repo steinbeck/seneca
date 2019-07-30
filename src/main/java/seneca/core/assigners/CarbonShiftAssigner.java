@@ -27,8 +27,8 @@ import org.openscience.cdk.Element;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.interfaces.IMolecularFormula;
 import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
-import org.openscience.spectra.model.NMRSignal;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSignal;
+import casekit.model.NMRSpectrum;
 import seneca.core.SenecaDataset;
 
 /**

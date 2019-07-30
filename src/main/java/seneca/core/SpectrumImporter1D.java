@@ -22,8 +22,8 @@
 package seneca.core;
 
 import java.util.StringTokenizer;
-import org.openscience.spectra.model.NMRSpectrum;
-import org.openscience.spectra.model.NMRSignal;
+import casekit.model.NMRSpectrum;
+import casekit.model.NMRSignal;
 
 /**
  * Importer tool class for clipboard and file-based peak data

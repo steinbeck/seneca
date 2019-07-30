@@ -43,13 +43,12 @@
     	 <dependency>
 		  <groupId>org.openscience.cdk</groupId>
 		  <artifactId>cdk-bundle</artifactId>
-		  <version>2.2-SNAPSHOT</version>
+		  <version>2.2</version>
 		</dependency>
-		 
-		 <dependency>
-		  <groupId>spectra</groupId>
-		  <artifactId>spectra</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
+		<dependency>
+		  <groupId>casekit</groupId>
+		  <artifactId>casekit</artifactId>
+		  <version>1.0</version>
 		</dependency>
         <dependency>
             <groupId>jfree</groupId>

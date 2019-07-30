@@ -30,8 +30,8 @@ import org.openscience.cdk.silent.AtomContainer;
 import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
 import org.openscience.cdk.tools.periodictable.PeriodicTable;
 
-import org.openscience.spectra.model.NMRSignal;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSignal;
+import casekit.model.NMRSpectrum;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

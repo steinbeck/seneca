@@ -30,7 +30,7 @@ import org.openscience.cdk.interfaces.IMolecularFormula;
 import org.openscience.cdk.silent.MolecularFormula;
 import org.openscience.cdk.silent.SilentChemObjectBuilder;
 import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSpectrum;
 import seneca.judges.*;
 
 import javax.swing.event.ChangeEvent;

@@ -27,8 +27,8 @@ import org.openscience.cdk.CDKConstants;
 import org.openscience.cdk.interfaces.IAtom;
 import org.openscience.cdk.interfaces.IAtomContainer;
 
-import org.openscience.spectra.model.NMRSignal;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSignal;
+import casekit.model.NMRSpectrum;
 
 import seneca.core.SenecaDataset;
 import seneca.judges.HHCOSYJudge;

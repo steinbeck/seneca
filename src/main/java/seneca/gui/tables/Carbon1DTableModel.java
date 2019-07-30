@@ -1,7 +1,7 @@
 package seneca.gui.tables;
 
-import org.openscience.spectra.model.NMRSignal;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSignal;
+import casekit.model.NMRSpectrum;
 import seneca.core.SenecaDataset;
 
 import javax.swing.table.AbstractTableModel;

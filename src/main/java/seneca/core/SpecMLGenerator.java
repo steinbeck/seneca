@@ -28,8 +28,8 @@ import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.interfaces.IBond;
 import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
 
-import org.openscience.spectra.model.NMRSpectrum;
-import org.openscience.spectra.model.NMRSignal;
+import casekit.model.NMRSpectrum;
+import casekit.model.NMRSignal;
 
 import seneca.core.exception.SenecaIOException;
 import seneca.structgen.sa.regular.ConvergenceAnnealingEngine;

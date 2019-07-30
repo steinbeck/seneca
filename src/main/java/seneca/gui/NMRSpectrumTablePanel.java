@@ -22,7 +22,7 @@
 package seneca.gui;
 
 import org.apache.log4j.Logger;
-import org.openscience.spectra.model.NMRSpectrum;
+import casekit.model.NMRSpectrum;
 import seneca.core.SenecaDataset;
 import seneca.core.SpectrumImporter1D;
 import seneca.core.SpectrumImporter2D;
