@@ -5,6 +5,12 @@ Seneca is a software for computer-assisted structure elucidation based on a stoc
 The software is licensed under GPL 2.0.
 This github repository hosts the latest version of Seneca based on the latest version of the Chemistry Development Kit (CDK).
 
+IMPORTANT: 
+Seneca in its current state is, and for the last 20 years was, what Barend Mons calls 'professorware' :)
+It is here for historical reasons and to document our work from 20 years ago. 
+We acknowledge that it is for the brave early adopter, but we are working hard to get to stage where we can give a nice GUI app to true experimental chemists to load some NMR fresh from the spectrometer and start the CASE from there. 
+
+
 ## Installation
 In preparation for using Seneca, goto https://github.com/steinbeck/casekit and follow the instructions to download. 
 Once done, also do a 
@@ -26,9 +32,6 @@ should get you an executable jar file in the 'target' directory, which you can t
 java -jar seneca.jar (use the real filename with all dependencies included)
 ```
 ## Using Seneca
-Seneca in its current state is, and for the last 20 years was, what Barend Mons calls 'professorware' :)
-We acknowledge that it is for the brave early adopter, but we are working hard to get to stage where we can give a nice GUI app to true experimental chemists to load some NMR fresh from the spectrometer and start the CASE from there. 
-
 For now, start Seneca as mentioned above. Goto File->Open->SenecaDataset, navigate to your source directory and there to target->test-classes->data. 
 Load the file Eurabidiol.sml. 
 You can then inspect the various aspects of the data tree in the left-most window of Seneca, or move directly to Structure Generation->Simulation.
