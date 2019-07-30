@@ -273,7 +273,7 @@ public class SenecaDataset implements java.io.Serializable, ChangeListener {
         judges.add(new HOSECodeJudge());
         judges.add(new AntiBredtJudge());
         judges.add(new RingStrainJudge());
-        judges.add(new NPLikenessJudge());
+        //judges.add(new NPLikenessJudge());
         for (int f = 0; f < judges.size(); f++) {
             logger.info(judges.get(f));
         }
