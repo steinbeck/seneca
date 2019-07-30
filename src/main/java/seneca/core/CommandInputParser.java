@@ -154,9 +154,9 @@ public class CommandInputParser {
             if (commandLine.hasOption("combine")) {
                 structureElucidator.setCombineResults(true);
             }
-            if (commandLine.hasOption("nplikeness")) {
-                judges.add(new NPLikenessJudge());
-            }
+//            if (commandLine.hasOption("nplikeness")) {
+//                judges.add(new NPLikenessJudge());
+//            }
             if (commandLine.hasOption("antibredt")) {
                 judges.add(new AntiBredtJudge());
             }
