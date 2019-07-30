@@ -25,7 +25,14 @@ should get you an executable jar file which you can then run by
 ```
 java -jar seneca.jar
 ```
+## Using Seneca
+Seneca in its current state is what Barend Mons calls 'professor ware' :)
+We acknowledge that it is for the brave early adopter, but we are working hard to get to stage where we can give a nice GUI app to true experimental chemists to load some NMR fresh from the spectrometer and start the CASE from there. 
 
+For now, start Seneca as mentioned above. Goto File->Open->SenecaDataset, navigate to your source directory and there to target->test-classes->data. 
+Load the file Eurabidiol.sml. 
+You can then inspect the various aspects of the data tree in the left-most window of Seneca, or move directly to Structure Generation->Simulation.
+In this window, you should see one local structure generator running, and the option "Evolutionary Algorithm" selected. Press the button "Start Structure Generation" in the lower part of the window to get the structure elucidated. Please note that due to the stochastic nature of the process, the CASE does not end with the perfect solution in every case. For this reason, you can start handful (instead of only one) local servers, select them all and then press "Start Structure Generation". 
 
 ## Contributors
 
