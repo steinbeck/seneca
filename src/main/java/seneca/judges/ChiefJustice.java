@@ -29,6 +29,7 @@ import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -136,6 +137,60 @@ public class ChiefJustice implements Serializable, Cloneable {
         if (score < 0) {
             score = 0;
         }
+        ScoreSummary scoreSummary = new ScoreSummary(score, description);
+        scoreSummary.maxScore = maxScore;
+        scoreSummary.allJudgeScores = allScores;
+        scoreSummary.costValue = score / maxScore;
+        return scoreSummary;
+    }
+
+    /**
+     * Like getScore(), but additionally prints a tagged JSON line to stdout with
+     * per-judge name, raw score, and max score for post-anneal breakdown analysis.
+     *
+     * Output format: SENECA_JUDGE_BREAKDOWN:[{"name":"HOSECodeJudge","score":1234.0,"max_score":1500.0}, ...]
+     *
+     * Uses Locale.US to ensure "." as decimal separator regardless of JVM locale.
+     * Uses manual String.format construction — no json-simple dependency required.
+     *
+     * D-01/D-02: Reports all active judges (HOSECodeJudge, HMBCJudge, HHCOSYJudge
+     * under -sa -hmbc -hhcosy; SymmetryJudge has no CLI flag and is never active).
+     */
+    public ScoreSummary getScoreWithBreakdown(IAtomContainer molecule) throws Exception {
+        if (!isInitialized) {
+            initJudges();
+        }
+        double score = 0;
+        String description = "";
+        Judge judge = null;
+        JudgeResult judgeResult = null;
+        double maxScore = 0;
+        propsCalculated = false;
+        String allScores = "";
+        StringBuilder sb = new StringBuilder("[");
+        boolean first = true;
+        for (int f = 0; f < judges.size(); f++) {
+            judge = (Judge) judges.get(f);
+            if (judge.getEnabled()) {
+                judgeResult = judge.evaluate(molecule);
+                maxScore += judgeResult.maxScore;
+                score += judgeResult.score;
+                description += judgeResult.scoreDescription + "\n";
+                allScores += ";" + judgeResult.score;
+                if (!first) {
+                    sb.append(",");
+                }
+                sb.append(String.format(Locale.US,
+                        "{\"name\":\"%s\",\"score\":%f,\"max_score\":%f}",
+                        judge.getName(), judgeResult.score, judgeResult.maxScore));
+                first = false;
+            }
+        }
+        sb.append("]");
+        if (score < 0) {
+            score = 0;
+        }
+        System.out.println("SENECA_JUDGE_BREAKDOWN:" + sb.toString());
         ScoreSummary scoreSummary = new ScoreSummary(score, description);
         scoreSummary.maxScore = maxScore;
         scoreSummary.allJudgeScores = allScores;

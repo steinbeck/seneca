@@ -515,6 +515,20 @@ public class ExecutableGenerator {
         this.judges = judges;
     }
 
+    /**
+     * Convenience method for ScoreReporter: sets the judges list, runs initiateJudges()
+     * and assignBoss(), and returns the configured ChiefJustice.
+     *
+     * Call readSpecSML() first, then setJudges(), then this method.
+     * The returned ChiefJustice is ready for getScoreWithBreakdown(molecule).
+     */
+    public ChiefJustice buildChiefJustice(List<Judge> judgeList) {
+        this.judges = judgeList;
+        initiateJudges();
+        assignBoss();
+        return boss;
+    }
+
     public void shouldLog(boolean value) {
         this.useLogger = value;
     }
