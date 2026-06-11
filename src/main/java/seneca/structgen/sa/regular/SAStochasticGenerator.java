@@ -279,6 +279,7 @@ public class SAStochasticGenerator extends StructureGenerator {
         randomGent = new RandomGenerator(startMolecule);
         annealingEngine.initAnnealing(randomGent, chiefJustice);
         //calculateFinalMaxScore();
+        long mvTotal = 0, mvAccepted = 0, mvDisconnected = 0; // Faulon-displacement instrumentation (debug)
         structGenLogger.info("Running Simulated annealing.");
         do {
             try {
@@ -289,10 +290,13 @@ public class SAStochasticGenerator extends StructureGenerator {
 
                     recentScore = chiefJustice.getScoreByThreading(result);
                     Thread.yield();
+                    mvTotal++;
+                    if (!org.openscience.cdk.graph.ConnectivityChecker.isConnected(result)) mvDisconnected++;
                     if (annealingEngine.isAccepted(recentScore.score,
                             lastScore.score)) {
                         randomGent.acceptStructure();
                         lastScore = recentScore;
+                        mvAccepted++;
                     }
                     Thread.yield();
                     if (recentScore.score > bestScore.score) {
@@ -333,6 +337,10 @@ public class SAStochasticGenerator extends StructureGenerator {
         } while (!annealingEngine.isFinished());
         running = false;
         long end = System.currentTimeMillis();
+        System.out.println(String.format(
+            "=== FAULON-DISPLACEMENT MOVE STATS === total=%d accepted=%d (ratio=%.3f) disconnected=%d (%.2f%%)",
+            mvTotal, mvAccepted, mvTotal > 0 ? (double) mvAccepted / mvTotal : 0.0,
+            mvDisconnected, mvTotal > 0 ? 100.0 * mvDisconnected / mvTotal : 0.0));
         System.out.println("Finished evolving in : " + (end - start) / 1000 + " seconds");
         structGenLogger.info("Finished evolving in : " + (end - start) / 1000 + " seconds");
         return structureGeneratorResult;

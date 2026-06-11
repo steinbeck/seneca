@@ -1,8 +1,7 @@
 package seneca.gui;
 
-import com.apple.eawt.Application;
-
 import javax.swing.*;
+import java.awt.Taskbar;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
@@ -48,8 +47,15 @@ public class SenecaMain {
         System.setProperty("apple.laf.useScreenMenuBar", "true");
         System.setProperty("com.apple.mrj.application.apple.menu.about.name",
                 "SENECA");
-        // Set the doc image
-        Application app = Application.getApplication();
-        app.setDockIconImage(Seneca.logo_512x512.getImage());
+        // Set the dock icon via the modern java.awt.Taskbar API (since Java 9).
+        // Replaces the removed/encapsulated com.apple.eawt.Application call, which
+        // no longer resolves on modern modular JDKs without --add-exports.
+        try {
+            if (Taskbar.isTaskbarSupported()) {
+                Taskbar.getTaskbar().setIconImage(Seneca.logo_512x512.getImage());
+            }
+        } catch (UnsupportedOperationException | SecurityException ex) {
+            // Dock icon is cosmetic; ignore if the platform refuses it.
+        }
     }
 }

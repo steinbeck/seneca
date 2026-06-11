@@ -114,7 +114,7 @@ public class RandomGenerator {
      * described in "Faulon, JCICS 1996, 36, 731".
      */
     public void mutate(IAtomContainer ac) {
-        System.out.println("mutating..");
+        // System.out.println("mutating.."); // silenced: per-move spam (debug instrumentation)
         logger.debug("RandomGenerator->mutate() Start");
         int nrOfAtoms = ac.getAtomCount();
         toMutate = ac;
@@ -287,7 +287,7 @@ public class RandomGenerator {
         } else if (b4 != null) {
             ac.removeBond(b4);
         }
-        System.out.println("mutated..");
+        // System.out.println("mutated.."); // silenced: per-move spam (debug instrumentation)
         logger.debug("a11 a12 a21 a22: " + a11 + " " + a12 + " " + a21 + " " + a22);
         logger.debug("b11 b12 b21 b22: " + b11 + " " + b12 + " " + b21 + " " + b22);
         //         System.out.println("Exited..");
