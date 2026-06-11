@@ -78,7 +78,11 @@ public class SetOfNodesTableModel extends AbstractTableModel {
                 }
             case 3:
                 if (ac.getAtom(row).getProperty(CDKConstants.NMRSHIFT_CARBON) != null) {
-                    return String.valueOf(ac.getAtom(row).getProperty(
+                    // Cast to Object so String.valueOf binds the Object overload, not
+                    // String.valueOf(char[]): NMRSHIFT_CARBON is stored as a Float
+                    // (see setValueAt), and CDK's generic getProperty otherwise lets
+                    // the compiler pick the char[] overload → Float-cannot-cast-to-[C.
+                    return String.valueOf((Object) ac.getAtom(row).getProperty(
                             CDKConstants.NMRSHIFT_CARBON));
                 }
         }
