@@ -524,6 +524,13 @@ public class ExecutableGenerator {
      */
     public ChiefJustice buildChiefJustice(List<Judge> judgeList) {
         this.judges = judgeList;
+        // Mirror the SA path (initiateStructureGeneration): the carbon-shift /
+        // atom-property assignment MUST run before initiateJudges(), otherwise
+        // getIsAtomPropertiesAssigned() stays false and the HMBC/HHCOSY judge
+        // configuration aborts via System.exit(0) before any breakdown is printed
+        // (observed for preconen, whose unassigned atomContainer H-count does not
+        // match the molecular formula). See assignHydrogensAndCheck().
+        assignHydrogensAndCheck();
         initiateJudges();
         assignBoss();
         return boss;
