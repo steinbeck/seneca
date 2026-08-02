@@ -69,7 +69,7 @@
     </atom>
     <atom id="a13">
       <string builtin="elementType">C</string>
-      <integer builtin="hydrogenCount">2</integer>
+      <integer builtin="hydrogenCount">0</integer>
       <float title="assignedCarbonShift">39.0</float>
     </atom>
     <atom id="a14">
@@ -84,7 +84,7 @@
     </atom>
     <atom id="a16">
       <string builtin="elementType">C</string>
-      <integer builtin="hydrogenCount">1</integer>
+      <integer builtin="hydrogenCount">2</integer>
       <float title="assignedCarbonShift">36.8</float>
     </atom>
     <atom id="a17">
@@ -94,7 +94,7 @@
     </atom>
     <atom id="a18">
       <string builtin="elementType">C</string>
-      <integer builtin="hydrogenCount">1</integer>
+      <integer builtin="hydrogenCount">2</integer>
       <float title="assignedCarbonShift">36.3</float>
     </atom>
     <atom id="a19">
